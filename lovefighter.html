@@ -1,48 +1,80 @@
 <!DOCTYPE HTML>
 <html>
 <head>
- <meta charset="utf-8" />
- <meta name="description" content="Love Fighter (2014) by Jennifer Chan. Run in Chrome/Safari">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta charset="utf-8" />
+
+<link rel="apple-touch-icon"
+      href="/static/images/identity/HTML5_Badge_64.png" />
+<link rel="apple-touch-icon-precomposed"
+      href="/static/images/identity/HTML5_Badge_64.png" />
+
+<!--for Google-->
+<meta name="description" content="Love Fighter (2014) by Jennifer Chan.">
 <meta name="keywords" content="love, fighter, Jennifer Chan, men, transformers, muscle, fetish, big, peck, military, soldier, boys, video, explosions, gay, straight, white">
 <meta name="author" content="Jennifer Chan">
-<style>
-.mask { width:100%; height:100%; position:fixed;}
-.one { background-image:url('https://24.media.tumblr.com/1ce89b505bb81bba270e60d2d2a84edf/tumblr_n0q4r0GQrO1qfsoewo1_1280.jpg'); background-repeat:no-repeat;background-size:100% 100%;}
-.two { background-image:url('http://www.mossyoak.com/camouflage/img/breakupinfinity/breakupinfinity-1.jpg'); background-repeat:no-repeat; background-size:100% 100%; }
-.three { background-image:url('http://www.blogofmanly.com/wp-content/uploads/2014/01/racism-and-masculinity.jpg'); background-repeat:no-repeat; background-size:100% 100%;}
-.four{background-image:url('images/strength.jpg');background-repeat:no-repeat; background-size:100% 100%;}
 
+<!-- for Facebook -->          
+<meta property="og:title" content="Jennifer Chan // Love Fighter (2014)" />
+<meta property="og:type" content="video.movie" />
+<meta property="og:image" content="images/knife.jpg" />
+<meta property="og:url" content="http://www.jennifer-chan.com/lovefighter.html" />
+<meta property="og:description" content="I'm a lover, not a fighter." />
 
-.Three-Dee{
-font-family: 'Arial Black', sans-serif;
-line-height: 1em;
-color: #002bff;
-text-align: center;
-font-weight:bold;
-font-style:italic;
-font-size: 85px;
-text-shadow:0px 0px 0 rgb(-38,5,217),1px 1px 0 rgb(-66,-23,189),2px 2px 0 rgb(-93,-50,162),3px 3px 0 rgb(-121,-78,134),4px 4px 0 rgb(-149,-106,106), 5px 5px 0 rgb(-177,-134,78),6px 6px 5px rgba(0,0,0,0.8),6px 6px 1px rgba(0,0,0,0.5),0px 0px 5px rgba(0,0,0,.2);
-z-index:1;}
+<!-- for Twitter -->          
+<meta name="twitter:card" content="Love Fighter by Jennifer Chan" />
+<meta name="twitter:title" content="Jennifer Chan // Love Fighter (2014)" />
+<meta name="twitter:description" content="I'm a lover, not a fighter." />
+<meta name="twitter:image" content="images/knife.jpg" />
 
-body{ font-family: 'Arial', sans-serif;
-font-style:italic;
-font-weight:bold;
-font-size:18px;
-color: #0000ff;
-text-align:right;}
+<!--mobile opt-->
 
-</style>
+<link rel="stylesheet" type="text/css" media="screen" href="css/screen.css">
 
+<link rel="stylesheet"
+  media="handheld, only screen and (max-device-width: 320px) and (max-device-width : 568px)" href="css/screen.css">
+
+<link rel="stylesheet"
+  media="only screen and (min-width: 641px) and (max-width: 800px)" href="css/screen.css">
+
+<!-- media="handheld" trick for Windows Mobile -->
+<link rel="stylesheet" href="css/screen.css" media="Screen">
+<link rel="stylesheet" href="css/screen.css" media="handheld">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
 <title>LOVE FIGHTER</title>
+
+<script src="js/jquery-1.8.3.js"></script>
 
 </head>
 <body>
 
-<script src="js/jquery-1.8.3.js"></script>
+<div class="one mask"></div>
+<div class="two mask"></div>
+<div class="three mask"></div>
+<div class="four mask"></div>
+<div style="position:relative; top:7em; margin: 0 auto;">
+<center>
+<div class="container">
+<div class="embed-container">
+<iframe src="//player.vimeo.com/video/85817372?title=0&amp;byline=0&amp;portrait=0&amp;autoplay=1&amp;loop=1" width="1010" height="606" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+</center><br><br>
+
+<p class="Three-Dee"> I'm a lover, <br>not a fighter <br>
+    but I'll fight <br>for what I love</p>
+<br>
+<p class="home" align="right"><a href="/">HOME</a></p>
+</div>
+</div>
+<br>
+
+
 <script>
 
-	$(document).ready(function() {
+    $(document).ready(function() {
     $('.mask').hide();
     
     function repeat() {
@@ -61,23 +93,21 @@ text-align:right;}
 
 </script>
 
-<div class="one mask"></div>
-<div class="two mask"></div>
-<div class="three mask"></div>
-<div class="four mask"></div>
-<div style="position:relative; width: 1080px; height: 606px; top:620px; margin: 0 auto;">
-<video loop controls id="video" width="1080" height="606" preload="auto" poster="images/knife.jpg">
-  <source src="love-fighter.mp4" type="video/mp4">
-  <source src="love-fighter.webm" type="video/webm">
-Your browser does not support the video tag.
-I suggest you upgrade your browser.
-</video>
-<p class="Three-Dee"> I'm a lover, <br>not a fighter <br>
-	but I'll fight <br>for what I love</p>
-<br>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+      <script src="js/jquery.fitvids.js"></script>
+      <script>
+        // Basic FitVids Test
+        $(".container").fitVids();
+        // Custom selector and No-Double-Wrapping Prevention Test
+        $(".container").fitVids({ customSelector: "iframe[src^='http://socialcam.com']"});
+      </script>
 
-<a href="http://vimeo.com/85817372">REDIRECT</a>
-
-
+<script>
+{% if is_mobile % }
+  // Hides mobile browser's address bar when page is done loading.
+  window.addEventListener('load', function(e) {
+    setTimeout(function() { window.scrollTo(0, 1); }, 1);
+  }, false);
+{% endif % }</script>
 </body>
 </html>

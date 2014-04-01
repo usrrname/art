@@ -2,18 +2,37 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:fb="http://ogp.me/ns/fb#">
 <head>
-<meta charset="utf-8">
-<meta property="og:image" content="" />
+
+<meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1, user-scalable = no"> 
+
 <title>jennifer chan, video + new media art - chicago IL</title>
 <meta content="jennifer chan, jen chan, artist, video, new media, net art, remix" name="Keywords" />
 <meta content="Jennifer Chan // video and new media art" name="Description" />
-<meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1, user-scalable = no"> 
+<meta name="author" content="Jennifer Chan">
 <meta name="robots" content="index,follow">
+<meta charset="utf-8">
+<link rel="apple-touch-icon"
+      href="/static/images/identity/HTML5_Badge_64.png" />
+<link rel="apple-touch-icon-precomposed"
+      href="/static/images/identity/HTML5_Badge_64.png" />
+
+<!-- for Facebook -->          
+<meta property="og:title" content="Jennifer Chan" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="images/fight.jpg" />
+<meta property="og:url" content="http://www.jennifer-chan.com"/>
+<meta property="og:description" content="video and internet art" />
+
+<!-- for Twitter -->          
+<meta name="twitter:card" content="Jennifer Chan" />
+<meta name="twitter:title" content="Jennifer Chan" />
+<meta name="twitter:description" content="artist on the internet" />
+<meta name="twitter:image" content="images/fight.jpg" />
  
     <!-- Styles -->
 
 <link rel="stylesheet" href="css/main.css">
-<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/normalize.min.css">
 <link rel="icon" href="img/favicon.ico" type="image/x-icon">
 
 <!-- jquery Code -->
@@ -22,6 +41,22 @@
     
 	<script src="js/para.js"></script>
 
+<!--mobile opt-->
+
+<link rel="stylesheet" type="text/css" media="screen" href="css/screen.css">
+
+<link rel="stylesheet"
+  media="handheld, only screen and (max-device-width: 320px) and (max-device-width : 568px)" href="css/screen.css">
+
+<link rel="stylesheet"
+  media="only screen and (min-width: 641px) and (max-width: 800px)" href="css/screen.css">
+
+<!-- media="handheld" trick for Windows Mobile -->
+<link rel="stylesheet" href="css/screen.css" media="Screen">
+<link rel="stylesheet" href="css/screen.css" media="handheld">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 </head>
     
 <body>
@@ -30,8 +65,10 @@
     <section id="home" data-speed="10" data-type="background" class="pages">
         
          <article>
-<iframe class="vine-embed" src="https://vine.co/v/MAX5wUzap3u/embed/simple?audio=1" width="480" height="480" frameborder="0"></iframe><script async src="//platform.vine.co/static/scripts/embed.js" charset="utf-8"></script>
-<p>deep burn, 52 sec., looped 2014</p>
+<div class="container">
+<div class="embed-container">            
+<iframe src="//player.vimeo.com/video/89772528?title=0&amp;byline=0&amp;portrait=0" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<p>deep burn, 52 sec., looped 2014</p></div></div>
 
 <br><br><h2>//new</h2>
         <br>
@@ -50,7 +87,9 @@
          <article>
          	<h2>Nicholas and Tristan <br>at <a href="http://easternblocmtl.tumblr.com/post/64742131850/jennifer-x-jennifer-19-september-16" target="_blank">Eastern Bloc</a></h2>
          	
-         	<br><br><iframe src="http://player.vimeo.com/video/77476408?title=0&amp;byline=0&amp;portrait=0" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+         	<br><br>
+            <div class="container"><div class="embed-container>
+                <iframe src="http://player.vimeo.com/video/77476408?title=0&amp;byline=0&amp;portrait=0" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div></div>
 
 <br><br><h2><a href="extra.html">>*A TOTAL JIZZFEST*</a>
          	<h2><a href="http://www.furtherfield.org/features/interviews/jennifer-chan-interview-interpassivity-internet-pop-culture" target="_blank">Furtherfield Interview</a></h2></article>
@@ -82,6 +121,15 @@
          
 </section>
 
+<!--fitvids js-->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+      <script src="js/jquery.fitvids.js"></script>
+      <script>
+        // Basic FitVids Test
+        $(".container").fitVids();
+        // Custom selector and No-Double-Wrapping Prevention Test
+        $(".container").fitVids({ customSelector: "iframe[src^='http://socialcam.com']"});
+      </script>
 </body>
 
 </html>
