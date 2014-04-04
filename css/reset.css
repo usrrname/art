@@ -27,6 +27,7 @@ article, aside, canvas, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section, summary,
 time, mark, audio, video {
   margin: 0;
+  margin-top:35px;
   padding: 0;
   border: 0;
   font-size: 100%;
@@ -135,7 +136,7 @@ input:invalid, textarea:invalid {
 ::selection { background:#FF5E99; color:#fff; text-shadow: none; }
 
 /* j.mp/webkit-tap-highlight-color */
-a:link { -webkit-tap-highlight-color: #FF5E99; }
+a:link { -webkit-tap-highlight-color: #FF5E99; text-decoration: none;}
 
 /* Make buttons play nice in IE:
    www.viget.com/inspire/styling-the-button-element-in-internet-explorer/ */
@@ -168,20 +169,6 @@ a:hover { color: #036; outline: none; text-decoration: none; }
  *
  * Author: 
  */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /**

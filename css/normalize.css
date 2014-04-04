@@ -108,9 +108,17 @@ a:focus {
  * Improve readability when focused and also mouse hovered in all browsers.
  */
 
+a{
+    color:#cc0033;
+}
 a:active,
-a:hover {
+a:hover, a:visited {
     outline: 0;
+    text-decoration: none;
+}
+
+a:hover{
+    color:3333ff;
 }
 
 /* ==========================================================================
@@ -122,6 +130,9 @@ a:hover {
  * Address font sizes within `section` and `article` in Firefox 4+, Safari 5,
  * and Chrome.
  */
+
+h1,h2,h3,h4,h5,h6
+{color: white; text-shadow: black 0.1em 0.1em 0.2em}
 
 h1 {
     font-size: 2em;
