@@ -12,7 +12,7 @@
 }
 
 #home { 
-  background: url(../images/fight1.jpg) 100% 0 repeat fixed; min-height: 1000px; 
+  background: url() 100% 0 repeat fixed; min-height: 1000px; 
   height: 1000px; 
   margin: 0 auto;
   margin-top:35px; 
@@ -86,7 +86,7 @@
 }
 
 #info{ 
-  background-color: #333;
+  background: url(../images/fight1.jpg);
   height: 700px; 
   margin: 0 auto; 
   width: 100%; 
@@ -103,4 +103,25 @@
   text-align: right; 
   top: 100px; 
   width: 90%; 
+}
+
+/*archive column divs*/
+#head {
+ position:relative;
+}
+#div-1a {
+ position:absolute;
+ top:0;
+ right:0;
+ width:30%;
+ margin-right:25%;
+ text-align: left;
+}
+#div-1b {
+ position:absolute;
+ top:0;
+ left:0;
+ margin-left: 10%;
+ width:30%;
+ text-align:left;
 }
