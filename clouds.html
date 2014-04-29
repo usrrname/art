@@ -1,0 +1,67 @@
+<DOCTYPE html>
+
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<script type="text/javascript" src="/js/jquery.scrollTo-min.js"></script> 
+		<script type="text/javascript" src="/js/jquery.serialScroll-min.js"></script>
+		<script src="/js/article.js?v=2" type="text/javascript"></script>
+		<style type="text/css">
+		#marble {
+		position: fixed;
+		z-index: -1;
+		top: 0px;
+		left: 0px;
+		max-height: none;
+		max-width: none;}
+</style>
+</head>
+
+<body>
+
+<div class="entry">
+	<iframe id="marble" src="//player.vimeo.com/video/85622642?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff&amp;autoplay=1&amp;loop=1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+
+
+<script type="text/javascript">
+$(document).ready( function() {
+$('#clouds').load( function() {
+
+setCloudsSize();
+console.log("load");
+});
+});
+
+$(window).resize( function() {
+setCloudsSize();
+console.log("resize");
+});
+
+function  setCloudsSize() {
+var ww = $(window).width();
+var wh = $(window).height();
+var ch, cw;
+if ( wh > (ww*(720/1280)) ) {
+ch = wh;
+console.log(ch);
+$('#clouds').height(ch);
+cw = (1280/720)*ch;  
+$('#clouds').width(cw);
+console.log(cw);
+console.log("height");
+} else {
+cw = ww;
+$('#clouds').width(cw);
+console.log(cw);
+ch = (720/1280)*cw;
+$('#clouds').height(ch);
+console.log(ch);
+console.log("width");
+}
+}	
+</script>
+</body>
+
+
+</html>
