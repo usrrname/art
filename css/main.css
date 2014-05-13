@@ -12,9 +12,9 @@
 }
 
 #home { 
-  background: url(../images/knife.jpg) 100% 0 repeat fixed; min-height: 1000px; 
-  height: 1000px; 
-  margin: 0 auto;
+  background: url(../images/knife.jpg) 100% 0 no-repeat fixed; min-height: 1000px; 
+  background-size: 100% 100%;
+  height: 100%; 
   margin-top:35px; 
   width: 100%; 
   max-width: 1920px; 
@@ -30,8 +30,9 @@
 }
  
 #easternbloc { 
-  background: url(../images/1tristan.jpg) 50% 0 repeat fixed; min-height: 1000px; 
-  height: 1000px; 
+  background: url(../images/1tristan.jpg) 100% 0 no-repeat fixed; 
+  background-size: 100% 100%;
+  height: 800px; 
   margin: 0 auto; 
   width: 100%; 
   max-width: 1920px; 
@@ -48,11 +49,12 @@
   width: 100%; 
 }
 #future{ 
-  background: url(../images/future.jpg) 50% 0 no-repeat; min-height: 1000px; 
-  height: 1000px; 
+  background: url(../images/future.jpg) 50% 100% no-repeat; 
+  background-size: 100% auto;
+  height: 800px; 
   margin: 0 auto; 
   width: 100%; 
-  max-width: 1920px; 
+  max-width: 100%; 
   position: relative; 
   -webkit-box-shadow: 0 0 50px rgba(0,0,0,0.8);
   box-shadow: 0 0 50px rgba(0,0,0,0.8);
@@ -67,8 +69,9 @@
 }
 
 #vs{ 
-  background: url(../images/realcore/longshot2.jpg) 50% 0 repeat fixed; min-height: 1000px; 
-  height: 1000px; 
+  background: url(../images/realcore/longshot2.jpg) 100% 0 no-repeat fixed; min-height: 1000px; 
+  background-size: 100% 100%;
+  height: 800px; 
   margin: 0 auto;
   width: 100%; 
   max-width: 1920px; 
@@ -87,6 +90,7 @@
 
 #info{ 
   background: url(../images/fight1.jpg);
+  background-size: 100% 100%;
   height: 700px; 
   margin: 0 auto; 
   width: 100%; 
