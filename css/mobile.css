@@ -19,15 +19,14 @@ transform: translateY(-50%);
 }
 
 .home {
-	font-family: 'Arial Black', sans-serif;
+	font-family: 'Courier New', Arial, sans-serif;
 line-height: 1em;
 font-style:italic;
 font-size: 32px;
 }
 
 body
-{ font-family: 'Arial', sans-serif;
-font-style:italic;
+{ font-family: 'Courier New', Arial, sans-serif;
 font-weight:bold;
 font-size:18px;
 color: #0000ff;
