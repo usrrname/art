@@ -23,19 +23,21 @@ a {
 }
 
 .post a {
-	color: #fff;
-	text-decoration: underline;
+	color: pink;
+	font-weight: 600;
+	text-decoration: none;
+	cursor: pointer;
 }
 
 a:hover {
 	color: red;
-	font-weight: bold;
+	font-weight: 800;
 	transition: 0.2s ease-in 0.2s;
 }
 
 a.active,
 li.active a {
-	color: #dddddd;
+	color: #aeabe2;
 }
 
 a.active:hover,
